@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>red spitting test</title>
+  </head>
+  <body>
+    <section>
+      <% if(!login){ %>
+      <h1>Please login</h1>
+      <form action="login" method="POST">
+        <input name="user" type="text" placeholder="username" />
+        <input name="password" type="password" />
+        <button>Don't push me!</button>
+      </form>
+      <% }else{ %>
+      <h1>Logged, welcome <%=login.user%></h1>
+      <% } %>
+    </section>
+  </body>
+</html>

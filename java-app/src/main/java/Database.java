@@ -6,7 +6,7 @@ class Database {
   final Connection connection;
 
   public Database() throws SQLException {
-    String url = "jdbc:postgresql://34.222.182.183/webapp";
+    String url = "jdbc:postgresql://localhost/webapp";
     Properties props = new Properties();
     props.setProperty("user","cobra");
     props.setProperty("password","red_skin");

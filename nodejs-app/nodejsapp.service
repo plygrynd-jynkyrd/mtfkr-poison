@@ -1,0 +1,11 @@
+[Unit]
+Description=Java Webapp
+
+[Service]
+ExecStart=/usr/bin/java -jar /home/ubuntu/Dowloads/mtfkr-poison/java-app/target/javaapp-0.0.1-SNAPSHOT.jar
+Restart=on-failure
+User=nobody
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
